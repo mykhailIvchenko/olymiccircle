@@ -1,0 +1,47 @@
+<header>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container-fluid" style="justify-content: center; text-align: center;",>
+    <a class="navbar-brand" id = "header_logo" href="javascript:void(0)" width= "150px" >
+      <img src="../resources/header-img.PNG" width="50px" style="z-index: 1; margin-left: 17px;">
+    </a>
+
+
+    <div class="navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" id = "header_goal" href="#goal">Goal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id = "header_donations" href="#donates">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id = "header_about_us" href="#about_us">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id = "header_contacts" href="#we_help">Contacts</a>
+        </li>
+      </ul>
+
+      <form class="d-flex flex-row-reverse" style="justify-content: center">
+        <div width = 300px>
+        <select ng-model='discussionsSelect px-3' id ="select_language" class='form-control' onChange="changeLanguage(value)">
+          <option value="en" selected>🇺🇸&emsp;English</option>
+          <option value="ua">🇺🇦&emsp;Українська</option>
+          <option value="ru">🇷🇺&emsp;Русский</option> 
+        </select>
+      </div>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+</header>
+
+<script>
+  function changeLanguage(lang)
+{
+  location.hash = lang;
+  location.reload();
+};
+</script>
